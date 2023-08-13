@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    android:background="@drawable/white_strokeblue_corner15"
+    android:layout_height="wrap_content">
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        app:boxBackgroundColor="@color/white"
+        android:hint="Tên Sách"
+        app:boxBackgroundMode="outline"
+        app:endIconMode="clear_text"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/basic"
+            android:layout_height="match_parent"
+            android:id="@+id/dialogThemSuaSach_ed_tenSach"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical"
+        android:weightSum="10">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mã Loại:"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            />
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:layout_weight="6"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:background="@color/white"
+            android:layout_height="wrap_content"
+            android:id="@+id/dialogThemSuaSach_sp_loaiSach"
+            />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        app:boxBackgroundColor="@color/white"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        android:layout_height="wrap_content"
+        app:boxBackgroundMode="outline"
+        android:hint="Giá Sách"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:inputType="numberDecimal"
+            android:fontFamily="@font/basic"
+            android:textColor="@color/black"
+            android:id="@+id/dialogThemSuaSach_ed_giaSach"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        app:boxBackgroundColor="@color/white"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        android:layout_height="wrap_content"
+        app:boxBackgroundMode="outline"
+        android:hint="Giá Khuyễn Mãi"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:inputType="numberDecimal"
+            android:fontFamily="@font/basic"
+            android:textColor="@color/black"
+            android:id="@+id/dialogThemSuaSach_ed_khuyenMai"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        app:boxBackgroundMode="outline"
+        android:hint="Number book"
+        app:boxBackgroundColor="@color/white"
+
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:inputType="numberDecimal"
+            android:fontFamily="@font/basic"
+            android:textColor="@color/black"
+            android:id="@+id/dialogThemSuaSach_ed_num"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@id/dialogSuaLoaiSach_inputLayout"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/dialogThemSuaSach_btn_dongY"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="4"
+            android:background="@drawable/ripperblue_black_coner8"
+            android:fontFamily="@font/basic"
+            android:text="Đồng ý"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="Huỷ"
+            android:layout_marginStart="20dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:background="@drawable/ripperblue_black_coner8"
+            android:id="@+id/dialogThemSuaSach_btn_huy"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>

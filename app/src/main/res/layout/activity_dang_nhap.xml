@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DangNhapActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Đăng nhập"
+        android:textSize="50sp"
+        android:id="@+id/actiDangNhap_tv_title"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@id/actiDangNhap_layout_linear"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fontFamily="@font/basic"
+        />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.11"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/logo_fpoly"
+        android:id="@+id/actiDangNhap_img_logo"
+        />
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:paddingEnd="30dp"
+        android:paddingStart="30dp"
+        android:id="@+id/actiDangNhap_layout_linear"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tài Khoản"
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="outline"
+            app:startIconTint="@color/black"
+            app:startIconDrawable="@drawable/ic_person"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/black"
+            app:boxStrokeColor="@color/purple_700"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/actiDangNhap_ed_taiKhoan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/basic"
+                android:textSize="20sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mật khẩu"
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="outline"
+            app:startIconDrawable="@drawable/ic_lock"
+            app:endIconMode="password_toggle"
+            app:startIconTint="@color/black"
+            app:endIconTint="@color/black"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:boxStrokeColor="@color/purple_700"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/actiDangNhap_ed_matKhau"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:fontFamily="@font/basic"
+                android:textSize="20sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lưu thông tin"
+            android:id="@+id/actiDangNhap_chk_luuThongTin"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="10"
+            >
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/actiDangNhap_btn_dangNhap"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_weight="4"
+                android:textColor="@color/white"
+                android:background="@drawable/ripperblue_black_coner8"
+                android:fontFamily="@font/basic"
+                android:text="Đăng nhập"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:layout_marginStart="15dp"
+                android:layout_height="wrap_content"
+                android:text="Đăng ký"
+                android:textColor="@color/white"
+                android:background="@drawable/ripperblue_black_coner8"
+                android:fontFamily="@font/basic"
+                android:textSize="18sp"
+                android:layout_weight="4"
+                android:id="@+id/actiDangNhap_btn_dangKy"
+                />
+        </LinearLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>

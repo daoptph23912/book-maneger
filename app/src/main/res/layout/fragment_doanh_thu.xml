@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.DoanhThuFragment">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundMode="outline"
+        android:layout_margin="10dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        android:hint="Từ Ngày"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxBackgroundColor="@color/white"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/quicksand"
+            android:textSize="20sp"
+            android:focusable="false"
+            android:id="@+id/fragDoangThu_ed_tuNgay"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundMode="outline"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        android:hint="Đến Ngày"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxBackgroundColor="@color/white"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/quicksand"
+            android:textSize="20sp"
+            android:focusable="false"
+            android:id="@+id/fragDoangThu_ed_denNgay"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@drawable/ripperblue_black_coner8"
+        android:text="Tính doanh thu"
+        android:textAllCaps="false"
+        android:id="@+id/fragDoanhThu_btn_tinhDoanhThu"
+        android:padding="15dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        />
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Tổng Doanh Thu: "
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/quicksand"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:fontFamily="@font/quicksand"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:textColor="#016E05"
+            android:id="@+id/fragDoangThu_tv_tongDoanhThu"
+            />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</LinearLayout>

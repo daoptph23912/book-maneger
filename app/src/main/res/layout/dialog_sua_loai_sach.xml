@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    android:background="@drawable/white_strokeblue_corner15"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        app:boxBackgroundColor="@color/white"
+        android:hint="Tên Loại Sách"
+        app:boxBackgroundMode="outline"
+        app:endIconMode="clear_text"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/dialogSuaLoaiSach_inputLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/basic"
+            android:layout_height="match_parent"
+            android:id="@+id/dialogsuaLoaiSach_ed_tenLoaiSach"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@id/dialogSuaLoaiSach_inputLayout"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/dialogSuaLoaiSach_btn_dongY"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="4"
+            android:background="@drawable/ripperblue_black_coner8"
+            android:fontFamily="@font/basic"
+            android:text="Đồng ý"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="Huỷ"
+            android:layout_marginStart="20dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:background="@drawable/ripperblue_black_coner8"
+            android:id="@+id/dialogSuaLoaiSach_btn_huy"
+            />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

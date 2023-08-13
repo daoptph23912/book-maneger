@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Quản lý phiếu mượn" android:id="@+id/nav_qlpm"
+        android:icon="@drawable/ic_home_24"/>
+    <item android:title="Quản lý loại sách" android:id="@+id/nav_qlls"
+        android:icon="@drawable/stack_24"/>
+    <item android:title="Quản lý sách" android:icon="@drawable/stack2_24"
+        android:id="@+id/nav_qls"/>
+    <item android:title="Quản lý thành viên" android:id="@+id/nav_qltv"
+        android:icon="@drawable/ic_people_24"/>
+    <item android:title="Quản lý người dùng" android:id="@+id/nav_qlnd"
+        android:icon="@drawable/ic_people_24"/>
+    <item android:title="Thông kế">
+        <menu>
+            <item android:title="10 Sách mượn nhiều nhất" android:id="@+id/nav_top10Sach" android:icon="@drawable/top_24"/>
+            <item android:title="Doanh thu" android:id="@+id/nav_doanhThu"
+                android:icon="@drawable/coin_24"/>
+        </menu>
+    </item>
+    <item android:title="Người dùng">
+        <menu>
+            <item android:title="Đổi mật khẩu"
+                android:id="@+id/nav_doiMatKhau"
+                android:icon="@drawable/ic_lock"/>
+            <item android:title="Đăng xuất"
+                android:id="@+id/nav_dangXuat" android:icon="@drawable/logout_24"/>
+        </menu>
+    </item>
+</menu>

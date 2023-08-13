@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    android:background="@drawable/white_strokeblue_corner15"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mã Thủ thủ: admin"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/basic"
+        android:id="@+id/dialogThemSuaPhieuMuon_tv_maThuThu"
+        />
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="100dp"
+        android:id="@+id/dialogThemPhieuMuon_sp_maTV"
+        />
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="100dp"
+        android:id="@+id/dialogThemSuaPhieuMuon_sp_maSach"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ngày:"
+        android:textSize="18sp"
+        android:id="@+id/dialogThemSuaPhieuMuon_tv_ngayThue"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/quicksand"
+        android:textColor="@color/black"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tiền Thuê:"
+        android:textSize="18sp"
+        android:id="@+id/dialogThemSuaPhieuMuon_tv_tienThue"
+        android:fontFamily="@font/quicksand"
+        android:textColor="@color/black"
+        />
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:fontFamily="@font/quicksand"
+        android:text="Đã trả Sách"
+        android:id="@+id/dialogThemSuaPhieuMuon_chk_check"
+        />
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@id/dialogSuaLoaiSach_inputLayout"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/dialogThemSuaPhieuMuon_btn_dongY"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="4"
+            android:background="@drawable/ripperblue_black_coner8"
+            android:fontFamily="@font/basic"
+            android:text="Đồng ý"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:id="@+id/dialogThemSuaPhieuMuon_btn_huy"
+            android:text="Huỷ"
+            android:layout_marginStart="20dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:background="@drawable/ripperblue_black_coner8"
+            />
+    </LinearLayout>
+</LinearLayout>
